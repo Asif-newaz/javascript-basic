@@ -1,7 +1,7 @@
             //input in javascript
 
-              var a = prompt("Enter a value: ");
-              document.write(a);
+            //   var a = prompt("Enter a value: ");
+            //   document.write(a);
 
             // case statement in javascript
 
@@ -36,12 +36,12 @@
             //    document.write("<br>");
             // } while(i < 5);
 
-            // var i = 0;
-            // while(i < 10) {
-            //     document.write(i);
-            //     i++;
-            //     document.write("<br>")
-            // }
+            var i = 0;
+            while(i < 10) {
+                document.write(i);
+                i++;
+                document.write("<br>")
+            }
 
             // var i = 0;
             // do {
