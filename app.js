@@ -1,11 +1,18 @@
-            //input in javascript
+// Alert function in Javascript
+var name = "World!";
+window.alert("Hello" + name);
 
+var a = 2;
+var b = 3;
+
+var sum = (a + b);
+
+document.write(sum);
+//input in javascript
             //   var a = prompt("Enter a value: ");
             //   document.write(a);
 
-            // case statement in javascript
-
-
+    // case statement in javascript
     // var day = 3;
     // switch(day) {
     //     case 1:
@@ -36,12 +43,12 @@
             //    document.write("<br>");
             // } while(i < 5);
 
-            var i = 0;
-            while(i < 10) {
-                document.write(i);
-                i++;
-                document.write("<br>")
-            }
+            // var i = 0;
+            // while(i < 10) {
+            //     document.write(i);
+            //     i++;
+            //     document.write("<br>")
+            // }
 
             // var i = 0;
             // do {
