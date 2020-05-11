@@ -1,6 +1,6 @@
 // Alert function in Javascript
-var name = "World!";
-window.alert("Hello" + name);
+var myName = "World!";
+window.alert("Hello" + " " + myName);
 
 var a = 2;
 var b = 3;
