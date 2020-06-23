@@ -1,4 +1,6 @@
 // Alert function in Javascript
+
+/*
 var myName = "World!";
 window.alert("Hello" + " " + myName);
 
@@ -8,6 +10,8 @@ var b = 3;
 var sum = (a + b);
 
 document.write(sum);
+
+*/
 //input in javascript
             //   var a = prompt("Enter a value: ");
             //   document.write(a);
@@ -608,3 +612,17 @@ document.write("$" + usd);
 
 // a = b++;
 // document.write(" a = " + a, "<br />" + "b = " + b);
+
+
+
+// Now I have started working with Jonas Schmedtmann
+console.log('Hello World!');
+
+var firstName = 'John';
+console.log(firstName);
+
+var fullAge = true;
+console.log(fullAge);
+
+var job;
+console.log(job);
