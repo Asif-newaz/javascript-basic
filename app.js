@@ -670,6 +670,9 @@ console.log(now / 2);
 //Logical operator
 var johnOlder = yearJohn < yearMark;
 console.log(johnOlder);
+
+//typeof operator
+console.log(typeof johnOlder);
     
     
     
