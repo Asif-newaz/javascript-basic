@@ -618,6 +618,7 @@ document.write("$" + usd);
 // Now I have started working with Jonas Schmedtmann
 console.log('Hello World!');
 
+/*
 var firstName = 'John';
 console.log(firstName);
 
@@ -626,3 +627,24 @@ console.log(fullAge);
 
 var job;
 console.log(job);
+*/
+
+var firstName = 'John';
+var age = 28;
+// Type coercion
+console.log(firstName + age);
+
+var job, isMarried;
+job = 'Teacher';
+isMarried = false;
+
+console.log(firstName + ' is a ' + age + ' years old ' + job + '. ' + 'Is he married? ' + isMarried);
+
+//variable Mutation
+age = 28;
+job = 'Driver';
+
+alert(firstName + ' is a ' + age + ' years old ' + job + '. ' + 'Is he married? ' + isMarried);
+
+var lastName = prompt('What is his last Name?');
+console.log(firstName + ' ' + lastName);
