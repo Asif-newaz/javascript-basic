@@ -629,6 +629,7 @@ var job;
 console.log(job);
 */
 
+/*
 var firstName = 'John';
 var age = 28;
 // Type coercion
@@ -648,3 +649,42 @@ alert(firstName + ' is a ' + age + ' years old ' + job + '. ' + 'Is he married? 
 
 var lastName = prompt('What is his last Name?');
 console.log(firstName + ' ' + lastName);
+*/
+
+//Basic operators
+var now, yearJohn, yearMark;
+now = 2020;
+ageJohn = 28;
+ageMark = 33;
+
+//Math operator
+yearJohn = now - ageJohn;
+yearMark = now - ageMark;
+
+console.log(yearJohn);
+
+console.log(now + 2);
+console.log(now * 2);
+console.log(now / 2);
+
+//Logical operator
+var johnOlder = yearJohn < yearMark;
+console.log(johnOlder);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
