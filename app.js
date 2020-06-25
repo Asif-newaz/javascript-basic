@@ -652,6 +652,7 @@ console.log(firstName + ' ' + lastName);
 */
 
 //Basic operators
+/*
 var now, yearJohn, yearMark;
 now = 2020;
 ageJohn = 28;
@@ -673,8 +674,16 @@ console.log(johnOlder);
 
 //typeof operator
 console.log(typeof johnOlder);
-    
-    
+*/
+
+
+//Operator precedence
+var now = 2018;
+var yearJohn = 1989;
+var fullAge = 18;
+
+var isFullAge = now - yearJohn >= fullAge; //true
+console.log(isFullAge);
     
     
     
