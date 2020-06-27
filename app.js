@@ -692,6 +692,20 @@ var ageMark = 35;
 var average = (ageJohn + ageMark) / 2;
 console.log(average);
 
+// Multiple assignments
+var x, y;
+x = y = (3 + 5) * 4 - 6; //8 * 4 -6 //32 -6 //26
+console.log(x, y);
+
+//More operators
+x /= 2;
+console.log(x);
+
+x++;
+console.log(x);
+
+x--;
+console.log(x);
 
     
     
@@ -707,4 +721,14 @@ console.log(average);
     
     
     
-    
+  
+
+
+
+
+
+
+
+
+
+
