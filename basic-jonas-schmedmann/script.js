@@ -61,7 +61,7 @@ console.log(typeof johnOlder);
 
 
 //Operator precedence
-
+/*
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
@@ -90,3 +90,46 @@ console.log(x);
 
 x--;
 console.log(x);
+*/
+
+//if else statement in Javascript
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' ' + 'is married!');
+} else {
+    console.log(firstName + ' ' + 'will hopefully marry soon!');
+}
+
+var isMarried = true;
+
+if (isMarried) {
+    console.log(firstName + ' ' + 'is married!');
+} else {
+    console.log(firstName + ' ' + 'will hopefully marry soon!');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
