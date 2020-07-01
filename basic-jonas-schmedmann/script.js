@@ -92,7 +92,10 @@ x--;
 console.log(x);
 */
 
-//if else statement in Javascript
+/**********
+*if else statement in Javascript
+*/
+
 /*
 var firstName = 'John';
 var civilStatus = 'single';
@@ -112,7 +115,10 @@ if (isMarried) {
 }
 */
 
-
+/*********
+*Boolean Logic
+*/
+/*
 var firstName = 'John';
 var age = 20;
 
@@ -126,7 +132,26 @@ if (age < 13) {
 else {
     console.log(firstName + ' is a man.');
 }
+*/
 
+
+/**************
+*The ternary operator and switch statement
+*/
+
+var firstName = 'John';
+var age = 16;
+
+/*
+if (age >= 18) {
+    console.log(firstName + ' dirnks beer.')
+} else {
+    console.log(firstName + ' drinks juice.')
+}
+*/
+
+age >= 18 ? console.log(firstName + ' dirnks beer.')
+: console.log(firstName + ' drinks juice.');
 
 
 
