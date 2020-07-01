@@ -9,6 +9,7 @@ GOOD LUCK 😀
 */
 
 // Solved normal way
+/*
 var massMark = 78; //kg
 var heightMark = 1.69; //meters
 
@@ -22,8 +23,10 @@ console.log(BMIMark, BMIJohn);
 
 var markHigherBMI = BMIMark > BMIJohn;
 console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
+*/
 
 //Solved challenge 1 using if else condition
+/*
 var massMark = 78; //kg
 var heightMark = 1.69; //meters
 
@@ -39,6 +42,11 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log('John\'s BMI is higher than Mark\'s');
 }
+*/
+
+
+
+
 
 
 
