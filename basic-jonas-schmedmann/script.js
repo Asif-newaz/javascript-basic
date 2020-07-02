@@ -150,8 +150,28 @@ if (age >= 18) {
 }
 */
 
+/*The ternary operator*/
+/*
 age >= 18 ? console.log(firstName + ' dirnks beer.')
 : console.log(firstName + ' drinks juice.');
+
+var drink = age >= 18 ? 'drinks beer' : 'drinks juice';
+console.log(firstName + ' ' + drink);
+*/
+/*
+if (age >= 18) {
+    var drink = 'drinks beer';
+} else {
+    var drink = 'drinks juice';
+}
+
+console.log(firstName + ' ' + drink);
+*/
+
+
+/*Switch statement*/
+
+
 
 
 
