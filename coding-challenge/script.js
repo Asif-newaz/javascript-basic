@@ -68,24 +68,40 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 GOOD LUCK 😀
 */
 
-var johnFirstGame = 89;
-var johnSecondGame = 120;
+var johnFirstGame = 189;
+var johnSecondGame = 141;
 var johnThirdGame = 103;
 
-var johnSum = ((johnFirstGame + johnSecondGame + johnThirdGame) / 3);
+var johnScore = ((johnFirstGame + johnSecondGame + johnThirdGame) / 3);
 
-console.log(johnSum);
+console.log(johnScore);
 
 
-var mikeFirstGame = 116;
+var mikeFirstGame = 150;
 var mikeSecondGame = 94;
 var mikeThirdGame = 123;
 
-var mikeSum = ((mikeFirstGame + mikeSecondGame + mikeThirdGame) / 3);
+var mikeScore = ((mikeFirstGame + mikeSecondGame + mikeThirdGame) / 3);
 
-console.log(mikeSum);
+console.log(mikeScore);
 
+var maryFirstGame = 97;
+var marySecondGame = 134;
+var maryThirdGame = 102;
 
+var maryScore = ((maryFirstGame + marySecondGame + maryThirdGame) / 3);
+
+console.log(maryScore);
+
+if (johnScore > mikeScore && johnScore > maryScore) {
+    console.log('John\'s Team is winner');
+} else if ( maryScore > mikeScore && maryScore > johnScore) {
+    console.log('mary\'s Team is winner');
+} else if (maryScore < mikeScore && mikeScore > johnScore) {
+    console.log('Mike\'s Team is winner');
+} else {
+    console.log('The game is drawn');
+}
 
 
 
