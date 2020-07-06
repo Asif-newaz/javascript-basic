@@ -266,15 +266,26 @@ function calculateAge(birthYear) {
 }
 
 var ageJohn = calculateAge(1993);
-var ageMike = calculateAge(1974);
-var ageJane = calculateAge(1998);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
 
 console.log(ageJohn, ageMike, ageJane);
 
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' ' + 'already retired.');
+    }
+    
+}
 
-
-
-
+yearsUntilRetirement(1993, 'John');
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'Jane');
 
 
 
