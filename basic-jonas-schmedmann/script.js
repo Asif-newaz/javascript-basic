@@ -240,7 +240,7 @@ else {
 //}
 
 //Equality operators
-
+/*
 var weight;
 
 weight = 27;
@@ -256,15 +256,20 @@ if (weight === '27') {
 } else {
     console.log('The === operator doesn\'t type coercion');
 }
+*/
 
+/*********************
+*Functions
+*/
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
+}
 
+var ageJohn = calculateAge(1993);
+var ageMike = calculateAge(1974);
+var ageJane = calculateAge(1998);
 
-
-
-
-
-
-
+console.log(ageJohn, ageMike, ageJane);
 
 
 
