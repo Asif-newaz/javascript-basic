@@ -68,6 +68,7 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 GOOD LUCK 😀
 */
 
+/*
 var johnFirstGame = 189;
 var johnSecondGame = 141;
 var johnThirdGame = 103;
@@ -83,8 +84,11 @@ var mikeThirdGame = 123;
 
 var mikeScore = ((mikeFirstGame + mikeSecondGame + mikeThirdGame) / 3);
 
-console.log(mikeScore);
 
+console.log(mikeScore);
+*/
+/*------------------------------------------------------------------------*/
+/*
 var maryFirstGame = 97;
 var marySecondGame = 134;
 var maryThirdGame = 102;
@@ -102,8 +106,39 @@ if (johnScore > mikeScore && johnScore > maryScore) {
 } else {
     console.log('The game is drawn');
 }
+*/
+
+var saymaFirstGame = 129;
+var saymaSecondGame = 129;
+var saymaThirdGame = 105;
+
+var saymaScore = ((saymaFirstGame + saymaSecondGame + saymaThirdGame) / 3);
+console.log('Sayma\'s score is ' + saymaScore);
+
+var tithiFirstGame = 122;
+var tithiSecondGame = 130;
+var tithiThirdGame = 102;
+
+var tithiScore = ((tithiFirstGame + tithiSecondGame + tithiThirdGame) / 3);
+console.log('Tithi\'s score is ' + tithiScore);
+
+var urbanaFirstGame = 128;
+var urbanaSecondGame = 130;
+var urbanaThirdGame = 102;
+
+var urbanaScore = ((urbanaFirstGame + urbanaSecondGame + urbanaThirdGame) / 3);
+console.log('Urbana\'s score is ' + urbanaScore);
 
 
+if (saymaScore > tithiScore && saymaScore > urbanaScore) {
+    console.log('Sayma\'s team is winner');
+} else if (saymaScore < tithiScore && urbanaScore < tithiScore) {
+    console.log('Tithi\'s team is winner');
+} else if (saymaScore < urbanaScore && urbanaScore > tithiScore) {
+    console.log('Urbana\'s team is winner');
+} else {
+    console.log('The game is drawn');
+}
 
 
 
