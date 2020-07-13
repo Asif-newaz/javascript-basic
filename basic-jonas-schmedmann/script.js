@@ -323,6 +323,7 @@ console.log(whatDoYouDo('retired', 'Mark'));
 /*********************
 *Arrays
 */
+/*
 // Initialize new Array
 var names = ['John', 'Mark', 'Jane'];
 var year = new Array(1990, 1969, 1948);
@@ -362,6 +363,57 @@ console.log(isDesigner);
 //} else {
 //    console.log('John IS a designer');
 //}
+*/
+
+
+/*********************
+*Objects and prope  rties
+*/
+
+/* Object literal */
+var john = {
+    firstName : 'John',
+    lastName : 'smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+}
+
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+/* Object mutation */
+john.job = 'designer';
+console.log(john.job);
+john.isMarried = true;
+console.log(john.isMarried);
+
+console.log(john.family);
+
+/* new Object syntax */
+var jane = new Object();
+
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+
+console.log(jane);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
