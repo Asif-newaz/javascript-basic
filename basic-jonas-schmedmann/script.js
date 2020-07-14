@@ -367,10 +367,11 @@ console.log(isDesigner);
 
 
 /*********************
-*Objects and prope  rties
+*Objects and properties
 */
 
 /* Object literal */
+/*
 var john = {
     firstName : 'John',
     lastName : 'smith',
@@ -384,16 +385,20 @@ console.log(john.firstName);
 console.log(john['lastName']);
 var x = 'birthYear';
 console.log(john[x]);
+*/
 
 /* Object mutation */
+/*
 john.job = 'designer';
 console.log(john.job);
 john.isMarried = true;
 console.log(john.isMarried);
 
 console.log(john.family);
+*/
 
 /* new Object syntax */
+/*
 var jane = new Object();
 
 jane.firstName = 'Jane';
@@ -401,10 +406,20 @@ jane.birthYear = 1969;
 jane['lastName'] = 'Smith';
 
 console.log(jane);
+*/
 
+/*********************
+*Objects and methods
+*/
 
-
-
+var john = {
+    firstName : 'John',
+    lastName : 'smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+}
 
 
 
