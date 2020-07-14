@@ -412,6 +412,7 @@ console.log(jane);
 *Objects and methods
 */
 
+/*
 var john = {
     firstName : 'John',
     lastName : 'smith',
@@ -419,7 +420,7 @@ var john = {
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'teacher',
     isMarried: false,
-    /* This function expression is called method of "john" object */
+    //This function expression is called method of "john" object 
     calcAge: function(birthYear) { 
         return 2020 - birthYear;
     }
@@ -427,8 +428,44 @@ var john = {
 };
 
 console.log(john.calcAge(1993));
+*/
+ /*
+var john = {
+    firstName : 'John',
+    lastName : 'smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    //This function expression is called method of "john" object
+    calcAge: function() { 
+        //Here "this" keyword means john which is using existing 'birthYear' value of john object
+        return 2020 - this.birthYear;
+    }
+
+};
+
+console.log(john.calcAge());
+*/ 
 
 
+var john = {
+    firstName : 'John',
+    lastName : 'smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    //This function expression is called method of "john" object
+    calcAge: function() { 
+        //Here "this" keyword means john which is using existing 'birthYear' value of john object
+        this.age = 2020 - this.birthYear;
+    }
+
+};
+
+john.calcAge();
+console.log(john);
 
 
 
