@@ -418,8 +418,15 @@ var john = {
     birthYear: 1990,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'teacher',
-    isMarried: false
-}
+    isMarried: false,
+    /* This function expression is called method of "john" object */
+    calcAge: function(birthYear) { 
+        return 2020 - birthYear;
+    }
+
+};
+
+console.log(john.calcAge(1993));
 
 
 
