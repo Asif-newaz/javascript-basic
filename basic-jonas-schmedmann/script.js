@@ -439,7 +439,7 @@ var john = {
     isMarried: false,
     //This function expression is called method of "john" object
     calcAge: function() { 
-        //Here "this" keyword means john which is using existing 'birthYear' value of john object
+        //Here "this" keyword means john which is used existing 'birthYear' value of john object
         return 2020 - this.birthYear;
     }
 
@@ -458,7 +458,7 @@ var john = {
     isMarried: false,
     //This function expression is called method of "john" object
     calcAge: function() { 
-        //Here "this" keyword means john which is using existing 'birthYear' value of john object
+        //Here "this" keyword means john which is used existing 'birthYear' value of john object
         this.age = 2020 - this.birthYear;
     }
 
