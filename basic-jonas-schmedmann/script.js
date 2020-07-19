@@ -472,8 +472,9 @@ console.log(john);
 *Loops and iteration
 */
 
-/*
+
 //for loop
+/*
 for (var i = 0; i<=10; i += 2) {
     console.log(i);
 }
@@ -484,9 +485,10 @@ var john = ['John', 'Smith', 1990, 'teacher', false];
 for (var i = 0; i < john.length; i++) {
     console.log(john[i]);
 }
-
+*/
 
 //while loop
+/*
 var i = 0;
 while (i < john.length) {
     console.log(john[i]);
