@@ -357,7 +357,7 @@ console.log(jane.indexOf(false));
 
 var isDesigner = jane.indexOf('Designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
 
-console.log(isDesigner);
+//console.log(isDesigner);
 //if (jane.indexOf('Teacher') === -1) {
 //    console.log('John is NOT a designer');
 //} else {
@@ -518,11 +518,46 @@ for (var i = 0; i < john.length; i++) {
 }
 */
 
+/*
 var john = ['John', 'Smith', 1990, 'teacher', false];
 
 for (var i = john.length - 1; i >= 0; i--) {
     console.log(john[i]);
 }
+*/
+
+
+/* HOW JavaScript WORKS BEHIND THE SCENES */
+
+//HOISTING
+
+calculateAge(1990);
+
+function calculateAge(year) {
+    console.log(2020 - year);
+}
+
+//calculateAge(1990);
+
+var retirement = function(year) {
+    console.log(65 - (2020 - year));
+}
+
+retirement(1956);
+
+//Variables
+
+console.log(age);
+var age = 23;
+
+function foo() {
+    console.log(age);
+    var age = 65;
+    console.log(age);
+}
+
+foo();
+console.log(age);
 
 
 
