@@ -530,23 +530,25 @@ for (var i = john.length - 1; i >= 0; i--) {
 /* HOW JavaScript WORKS BEHIND THE SCENES */
 
 //HOISTING
-
+/*
 calculateAge(1990);
 
 function calculateAge(year) {
     console.log(2020 - year);
 }
+*/
 
 //calculateAge(1990);
-
+/*
 var retirement = function(year) {
     console.log(65 - (2020 - year));
-}
+};
 
 retirement(1956);
+*/
 
 //Variables
-
+/*
 console.log(age);
 var age = 23;
 
@@ -558,7 +560,22 @@ function foo() {
 
 foo();
 console.log(age);
+*/
 
+
+//SCOPING
+var a = 'Hello!';
+first();
+
+function first() {
+    var b = 'Hi!';
+    second();
+    
+    function second() {
+        var c = 'Hey!';
+        console.log(a + b + c);
+    }
+}
 
 
 
