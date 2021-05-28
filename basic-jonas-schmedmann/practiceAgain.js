@@ -29,7 +29,7 @@
 // console.log(average);
 
 // Challenge 1
-var weightMark = 87;
+var weightMark = 97;
 var heightMark = 1.8;
 var weightJohn = 75;
 var heightJohn = 1.6;
@@ -37,6 +37,8 @@ var heightJohn = 1.6;
 var bmiMark = weightMark / (heightMark * heightMark);
 var bmiJohn = weightJohn / (heightJohn * heightJohn);
 
-var bmiComparison = bmiJohn < weightMark;
-
-console.log("Is mark's BMI higher than John's?" + " ", bmiComparison);
+if (bmiMark > bmiJohn) {
+  console.log("Mark's BMI is higher than John's.");
+} else {
+  console.log("John's BMI is higher than Mark's.");
+}
