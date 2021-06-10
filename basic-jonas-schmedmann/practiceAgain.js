@@ -44,19 +44,32 @@
 // }
 
 // if else condition
-var firsName = "Asif";
-var civilStatus = "single";
+// var firsName = "Asif";
+// var civilStatus = "single";
 
-if (civilStatus === "married") {
-  console.log(firsName + " is married!");
+// if (civilStatus === "married") {
+//   console.log(firsName + " is married!");
+// } else {
+//   console.log(firsName + " will marry soon!!!");
+// }
+
+// var isMarried = false;
+
+// if (isMarried) {
+//   console.log(firsName + " is married!");
+// } else {
+//   console.log(firsName + " will marry soon!!!");
+// }
+
+var firstName = "John";
+var age = 20;
+
+if (age < 13) {
+  console.log(firstName + " is a boy");
+} else if (age >= 13 && age < 20) {
+  console.log(firstName + " is a teenager");
+} else if (age >= 20 && age <= 30) {
+  console.log(firstName + " is a young man");
 } else {
-  console.log(firsName + " will marry soon!!!");
-}
-
-var isMarried = false;
-
-if (isMarried) {
-  console.log(firsName + " is married!");
-} else {
-  console.log(firsName + " will marry soon!!!");
+  console.log(firstName + " is a man");
 }
