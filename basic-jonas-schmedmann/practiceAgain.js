@@ -29,16 +29,26 @@
 // console.log(average);
 
 // Challenge 1
-var weightMark = 97;
-var heightMark = 1.8;
-var weightJohn = 75;
-var heightJohn = 1.6;
+// var weightMark = 97;
+// var heightMark = 1.8;
+// var weightJohn = 75;
+// var heightJohn = 1.6;
 
-var bmiMark = weightMark / (heightMark * heightMark);
-var bmiJohn = weightJohn / (heightJohn * heightJohn);
+// var bmiMark = weightMark / (heightMark * heightMark);
+// var bmiJohn = weightJohn / (heightJohn * heightJohn);
 
-if (bmiMark > bmiJohn) {
-  console.log("Mark's BMI is higher than John's.");
+// if (bmiMark > bmiJohn) {
+//   console.log("Mark's BMI is higher than John's.");
+// } else {
+//   console.log("John's BMI is higher than Mark's.");
+// }
+
+// if else condition
+var firsName = "Asif";
+var civilStatus = "single";
+
+if (civilStatus === "married") {
+  console.log(firsName + " is married!");
 } else {
-  console.log("John's BMI is higher than Mark's.");
+  console.log(firsName + " will marry soon!!!");
 }
