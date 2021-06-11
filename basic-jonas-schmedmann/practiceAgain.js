@@ -116,20 +116,82 @@
 // Falsy Values: undefined, 0, ' ', null, NaN
 // Truthy Values: Not falsy values
 
+// var height;
+// height = NaN;
 
-var height;
-height = NaN;
+// if (height) {
+//   console.log("variable is defined");
+// } else {
+//   console.log("variable has not been defined");
+// }
 
-if (height) {
-  console.log("variable is defined");
+// var x = '0';
+
+// if (x == 0 ) {
+//   console.log('The == operator does type coercion!')
+// } else {
+//   console.log('The === operator does not type coercion')
+// }
+
+// Challenge 2
+var firstTeam,
+  secondTeam,
+  thirdTeam,
+  johnFirstGame,
+  johnSecondGame,
+  johnThirdGame,
+  mikeFirstGame,
+  mikeSecondGame,
+  mikeThirdGame,
+  maryFirstGame,
+  marySecondGame,
+  maryThirdGame;
+
+firstTeam = "John's";
+secondTeam = "Mike's";
+thirdTeam = "Mary's"
+
+johnFirstGame = 89;
+johnSecondGame = 120;
+johnThirdGame = 103;
+
+var johnTeamAverage = (johnFirstGame + johnSecondGame + johnThirdGame) / 3;
+
+mikeFirstGame = 97;
+mikeSecondGame = 134;
+mikeThirdGame = 105;
+
+var mikeTeamAverage = (mikeFirstGame + mikeSecondGame + mikeThirdGame) / 3;
+
+maryFirstGame = 97;
+marySecondGame = 134;
+maryThirdGame = 105;
+
+var maryTeamAverage = (maryFirstGame + marySecondGame + maryThirdGame) / 3;
+
+// console.log(
+//   firstTeam + " score is " + johnTeamAverage,
+//   secondTeam + " score is " + mikeTeamAverage
+// );
+
+if (johnTeamAverage > mikeTeamAverage && johnTeamAverage > maryTeamAverage) {
+  console.log(
+    firstTeam + " team wins! " + " And the average score is " + johnTeamAverage
+  );
+} else if (
+  mikeTeamAverage > johnTeamAverage &&
+  mikeTeamAverage > maryTeamAverage
+) {
+  console.log(
+    secondTeam + " team wins! " + " And the average score is " + mikeTeamAverage
+  );
+} else if (
+  maryTeamAverage > johnTeamAverage &&
+  maryTeamAverage > mikeTeamAverage
+) {
+  console.log(
+    thirdTeam + " team wins! " + " And the average score is " + maryTeamAverage
+  );
 } else {
-  console.log("variable has not been defined");
-}
-
-var x = '0';
-
-if (x == 0 ) {
-  console.log('The == operator does type coercion!')
-} else {
-  console.log('The === operator does not type coercion')
+  console.log("The game is drawn!");
 }
