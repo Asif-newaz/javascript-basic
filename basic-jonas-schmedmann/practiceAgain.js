@@ -209,9 +209,20 @@ function calculateAge(birthYear) {
 function yearsUntilRetirement(year, firstName) {
   var age = calculateAge(year);
   var retirement = 65 - age;
-  console.log(firstName + " retires in " + retirement + " years.");
+
+  // Normal if else condition
+  // if (retirement > 0) {
+  //   console.log(firstName + " retires in " + retirement + " years.");
+  // } else {
+  //   console.log(firstName + " already retired.");
+  // }
+
+  // Ternary operator
+  retirement > 0
+    ? console.log(firstName + " retires in " + retirement + " years.")
+    : console.log(firstName + " already retired.");
 }
 
 yearsUntilRetirement(1990, "John");
-yearsUntilRetirement(1993, "Mike");
+yearsUntilRetirement(1944, "Mike");
 yearsUntilRetirement(1995, "Jane");
