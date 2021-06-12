@@ -134,64 +134,84 @@
 // }
 
 // Challenge 2
-var firstTeam,
-  secondTeam,
-  thirdTeam,
-  johnFirstGame,
-  johnSecondGame,
-  johnThirdGame,
-  mikeFirstGame,
-  mikeSecondGame,
-  mikeThirdGame,
-  maryFirstGame,
-  marySecondGame,
-  maryThirdGame;
+// var firstTeam,
+//   secondTeam,
+//   thirdTeam,
+//   johnFirstGame,
+//   johnSecondGame,
+//   johnThirdGame,
+//   mikeFirstGame,
+//   mikeSecondGame,
+//   mikeThirdGame,
+//   maryFirstGame,
+//   marySecondGame,
+//   maryThirdGame;
 
-firstTeam = "John's";
-secondTeam = "Mike's";
-thirdTeam = "Mary's"
+// firstTeam = "John's";
+// secondTeam = "Mike's";
+// thirdTeam = "Mary's"
 
-johnFirstGame = 89;
-johnSecondGame = 120;
-johnThirdGame = 103;
+// johnFirstGame = 89;
+// johnSecondGame = 120;
+// johnThirdGame = 103;
 
-var johnTeamAverage = (johnFirstGame + johnSecondGame + johnThirdGame) / 3;
+// var johnTeamAverage = (johnFirstGame + johnSecondGame + johnThirdGame) / 3;
 
-mikeFirstGame = 97;
-mikeSecondGame = 134;
-mikeThirdGame = 105;
+// mikeFirstGame = 97;
+// mikeSecondGame = 134;
+// mikeThirdGame = 105;
 
-var mikeTeamAverage = (mikeFirstGame + mikeSecondGame + mikeThirdGame) / 3;
+// var mikeTeamAverage = (mikeFirstGame + mikeSecondGame + mikeThirdGame) / 3;
 
-maryFirstGame = 97;
-marySecondGame = 134;
-maryThirdGame = 105;
+// maryFirstGame = 97;
+// marySecondGame = 134;
+// maryThirdGame = 105;
 
-var maryTeamAverage = (maryFirstGame + marySecondGame + maryThirdGame) / 3;
+// var maryTeamAverage = (maryFirstGame + marySecondGame + maryThirdGame) / 3;
 
 // console.log(
 //   firstTeam + " score is " + johnTeamAverage,
 //   secondTeam + " score is " + mikeTeamAverage
 // );
 
-if (johnTeamAverage > mikeTeamAverage && johnTeamAverage > maryTeamAverage) {
-  console.log(
-    firstTeam + " team wins! " + " And the average score is " + johnTeamAverage
-  );
-} else if (
-  mikeTeamAverage > johnTeamAverage &&
-  mikeTeamAverage > maryTeamAverage
-) {
-  console.log(
-    secondTeam + " team wins! " + " And the average score is " + mikeTeamAverage
-  );
-} else if (
-  maryTeamAverage > johnTeamAverage &&
-  maryTeamAverage > mikeTeamAverage
-) {
-  console.log(
-    thirdTeam + " team wins! " + " And the average score is " + maryTeamAverage
-  );
-} else {
-  console.log("The game is drawn!");
+// if (johnTeamAverage > mikeTeamAverage && johnTeamAverage > maryTeamAverage) {
+//   console.log(
+//     firstTeam + " team wins! " + " And the average score is " + johnTeamAverage
+//   );
+// } else if (
+//   mikeTeamAverage > johnTeamAverage &&
+//   mikeTeamAverage > maryTeamAverage
+// ) {
+//   console.log(
+//     secondTeam + " team wins! " + " And the average score is " + mikeTeamAverage
+//   );
+// } else if (
+//   maryTeamAverage > johnTeamAverage &&
+//   maryTeamAverage > mikeTeamAverage
+// ) {
+//   console.log(
+//     thirdTeam + " team wins! " + " And the average score is " + maryTeamAverage
+//   );
+// } else {
+//   console.log("The game has been drawn!");
+// }
+
+function calculateAge(birthYear) {
+  return 2021 - birthYear;
 }
+
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1991);
+// var ageJane = calculateAge(1992);
+
+// console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year, firstName) {
+  var age = calculateAge(year);
+  var retirement = 65 - age;
+  console.log(firstName + " retires in " + retirement + " years.");
+}
+
+yearsUntilRetirement(1990, "John");
+yearsUntilRetirement(1993, "Mike");
+yearsUntilRetirement(1995, "Jane");
