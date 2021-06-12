@@ -196,9 +196,10 @@
 //   console.log("The game has been drawn!");
 // }
 
-function calculateAge(birthYear) {
-  return 2021 - birthYear;
-}
+// Function declaration
+// function calculateAge(birthYear) {
+//   return 2021 - birthYear;
+// }
 
 // var ageJohn = calculateAge(1990);
 // var ageMike = calculateAge(1991);
@@ -206,23 +207,51 @@ function calculateAge(birthYear) {
 
 // console.log(ageJohn, ageMike, ageJane);
 
-function yearsUntilRetirement(year, firstName) {
-  var age = calculateAge(year);
-  var retirement = 65 - age;
+// function yearsUntilRetirement(year, firstName) {
+//   var age = calculateAge(year);
+//   var retirement = 65 - age;
 
-  // Normal if else condition
-  // if (retirement > 0) {
-  //   console.log(firstName + " retires in " + retirement + " years.");
+// Normal if else condition
+// if (retirement > 0) {
+//   console.log(firstName + " retires in " + retirement + " years.");
+// } else {
+//   console.log(firstName + " already retired.");
+// }
+
+// Ternary operator
+//   retirement > 0
+//     ? console.log(firstName + " retires in " + retirement + " years.")
+//     : console.log(firstName + " already retired.");
+// }
+
+// yearsUntilRetirement(1990, "John");
+// yearsUntilRetirement(1944, "Mike");
+// yearsUntilRetirement(1995, "Jane");
+
+// Function expression
+var whatDoYouDo = function (job, firstName) {
+  // if (job === "teacher") {
+  //   return firstName + " teaches kids how to code.";
+  // } else if (job === "driver") {
+  //   return firstName + " drive a cab in Dhaka.";
+  // } else if (job === "designer") {
+  //   return firstName + " designs a beautiful websites.";
   // } else {
-  //   console.log(firstName + " already retired.");
+  //   return firstName + " does something else.";
   // }
 
-  // Ternary operator
-  retirement > 0
-    ? console.log(firstName + " retires in " + retirement + " years.")
-    : console.log(firstName + " already retired.");
-}
+  switch (job) {
+    case "teacher":
+      return firstName + " teaches kids how to code.";
+    case "driver":
+      return firstName + " drive a cab in Dhaka.";
+    case "designer":
+      return firstName + " designs a beautiful websites.";
+    default:
+      return firstName + " does something else.";
+  }
+};
 
-yearsUntilRetirement(1990, "John");
-yearsUntilRetirement(1944, "Mike");
-yearsUntilRetirement(1995, "Jane");
+console.log(whatDoYouDo("teacher", "John"));
+console.log(whatDoYouDo("retired", "Mark"));
+console.log(whatDoYouDo("designer", "Jane"));
