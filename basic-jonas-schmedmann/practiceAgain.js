@@ -257,29 +257,51 @@
 // console.log(whatDoYouDo("designer", "Jane"));
 
 // Array
-var names = ["John", "Mark", "Jane"];
-var years = new Array(1990, 1993, 1989);
+// var names = ["John", "Mark", "Jane"];
+// var years = new Array(1990, 1993, 1989);
 
-names[1] = "Mike";
-names[names.length] = "Mary";
-console.log(names);
-console.log(names.length);
+// names[1] = "Mike";
+// names[names.length] = "Mary";
+// console.log(names);
+// console.log(names.length);
 
 // Different data types in an Array
-var john = ["John", "Smith", 1990, "Teacher", false];
+// var john = ["John", "Smith", 1990, "Teacher", false];
 
-john.push("black");
-john.unshift("Mr.");
-john.pop();
-john.shift();
-console.log(john);
+// john.push("black");
+// john.unshift("Mr.");
+// john.pop();
+// john.shift();
+// console.log(john);
 
-var x = john.indexOf("Smith");
-console.log(x);
+// var x = john.indexOf("Smith");
+// console.log(x);
 
-var isDesigner =
-  john.indexOf("Designer") === -1
-    ? "John is NOT a designer"
-    : "John is Designer";
+// var isDesigner =
+//   john.indexOf("Designer") === -1
+//     ? "John is NOT a designer"
+//     : "John is Designer";
 
-console.log(isDesigner);
+// console.log(isDesigner);
+
+// Challenge 2
+function tipCalculator(bill) {
+  if (bill < 50) {
+    return (20 / 100) * bill;
+  } else if (bill >= 50 && bill <= 200) {
+    return (15 / 100) * bill;
+  } else {
+    return (10 / 100) * bill;
+  }
+}
+
+var bills = [124, 48, 268];
+
+var tipOne = tipCalculator(bills[0]);
+var tipTwo = tipCalculator(bills[1]);
+var tipThree = tipCalculator(bills[2]);
+
+var Tips = [tipOne, tipTwo, tipThree];
+var totalBill = [Tips[0] + bills[0], Tips[1] + bills[1], Tips[2] + bills[2]];
+
+console.log(Tips, totalBill);
