@@ -229,29 +229,57 @@
 // yearsUntilRetirement(1995, "Jane");
 
 // Function expression
-var whatDoYouDo = function (job, firstName) {
-  // if (job === "teacher") {
-  //   return firstName + " teaches kids how to code.";
-  // } else if (job === "driver") {
-  //   return firstName + " drive a cab in Dhaka.";
-  // } else if (job === "designer") {
-  //   return firstName + " designs a beautiful websites.";
-  // } else {
-  //   return firstName + " does something else.";
-  // }
+// var whatDoYouDo = function (job, firstName) {
+// if (job === "teacher") {
+//   return firstName + " teaches kids how to code.";
+// } else if (job === "driver") {
+//   return firstName + " drive a cab in Dhaka.";
+// } else if (job === "designer") {
+//   return firstName + " designs a beautiful websites.";
+// } else {
+//   return firstName + " does something else.";
+// }
 
-  switch (job) {
-    case "teacher":
-      return firstName + " teaches kids how to code.";
-    case "driver":
-      return firstName + " drive a cab in Dhaka.";
-    case "designer":
-      return firstName + " designs a beautiful websites.";
-    default:
-      return firstName + " does something else.";
-  }
-};
+//   switch (job) {
+//     case "teacher":
+//       return firstName + " teaches kids how to code.";
+//     case "driver":
+//       return firstName + " drive a cab in Dhaka.";
+//     case "designer":
+//       return firstName + " designs a beautiful websites.";
+//     default:
+//       return firstName + " does something else.";
+//   }
+// };
 
-console.log(whatDoYouDo("teacher", "John"));
-console.log(whatDoYouDo("retired", "Mark"));
-console.log(whatDoYouDo("designer", "Jane"));
+// console.log(whatDoYouDo("teacher", "John"));
+// console.log(whatDoYouDo("retired", "Mark"));
+// console.log(whatDoYouDo("designer", "Jane"));
+
+// Array
+var names = ["John", "Mark", "Jane"];
+var years = new Array(1990, 1993, 1989);
+
+names[1] = "Mike";
+names[names.length] = "Mary";
+console.log(names);
+console.log(names.length);
+
+// Different data types in an Array
+var john = ["John", "Smith", 1990, "Teacher", false];
+
+john.push("black");
+john.unshift("Mr.");
+john.pop();
+john.shift();
+console.log(john);
+
+var x = john.indexOf("Smith");
+console.log(x);
+
+var isDesigner =
+  john.indexOf("Designer") === -1
+    ? "John is NOT a designer"
+    : "John is Designer";
+
+console.log(isDesigner);
