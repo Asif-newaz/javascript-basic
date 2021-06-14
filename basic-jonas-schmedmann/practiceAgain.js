@@ -264,6 +264,7 @@
 // names[names.length] = "Mary";
 // console.log(names);
 // console.log(names.length);
+// console.log(years[0]);
 
 // Different data types in an Array
 // var john = ["John", "Smith", 1990, "Teacher", false];
@@ -284,24 +285,51 @@
 
 // console.log(isDesigner);
 
-// Challenge 2
-function tipCalculator(bill) {
-  if (bill < 50) {
-    return (20 / 100) * bill;
-  } else if (bill >= 50 && bill <= 200) {
-    return (15 / 100) * bill;
-  } else {
-    return (10 / 100) * bill;
-  }
-}
+// Challenge 3
+// function tipCalculator(bill) {
+//   if (bill < 50) {
+//     return (20 / 100) * bill;
+//   } else if (bill >= 50 && bill <= 200) {
+//     return (15 / 100) * bill;
+//   } else {
+//     return (10 / 100) * bill;
+//   }
+// }
 
-var bills = [124, 48, 268];
+// var bills = [124, 48, 268];
 
-var tipOne = tipCalculator(bills[0]);
-var tipTwo = tipCalculator(bills[1]);
-var tipThree = tipCalculator(bills[2]);
+// var tipOne = tipCalculator(bills[0]);
+// var tipTwo = tipCalculator(bills[1]);
+// var tipThree = tipCalculator(bills[2]);
 
-var Tips = [tipOne, tipTwo, tipThree];
-var totalBill = [Tips[0] + bills[0], Tips[1] + bills[1], Tips[2] + bills[2]];
+// var Tips = [tipOne, tipTwo, tipThree];
+// var totalBill = [Tips[0] + bills[0], Tips[1] + bills[1], Tips[2] + bills[2]];
 
-console.log(Tips, totalBill);
+// console.log(Tips, totalBill);
+
+// Object
+var john = {
+  firstName: "John",
+  lastName: "Smith",
+  birthYear: 1990,
+  family: ["Jane", "Mark", "Bob", "Emily"],
+  isMarried: false,
+  23: "It is a number",
+};
+
+console.log(john.family);
+console.log(john[23]);
+
+john.birthYear = 1993;
+john["isMarried"] = true;
+john.sibling = "Natalie";
+
+console.log(john);
+
+var jane = new Object();
+
+jane.firstName = "Jane";
+jane.lastName = "Foster";
+jane.birthYear = 1994;
+
+console.log(jane);
