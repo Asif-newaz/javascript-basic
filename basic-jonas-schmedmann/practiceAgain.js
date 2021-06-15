@@ -308,6 +308,33 @@
 // console.log(Tips, totalBill);
 
 // Object
+// var john = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   birthYear: 1990,
+//   family: ["Jane", "Mark", "Bob", "Emily"],
+//   isMarried: false,
+//   23: "It is a number",
+// };
+
+// console.log(john.family);
+// console.log(john[23]);
+
+// john.birthYear = 1993;
+// john["isMarried"] = true;
+// john.sibling = "Natalie";
+
+// console.log(john);
+
+// var jane = new Object();
+
+// jane.firstName = "Jane";
+// jane.lastName = "Foster";
+// jane.birthYear = 1994;
+
+// console.log(jane);
+
+// Object and method
 var john = {
   firstName: "John",
   lastName: "Smith",
@@ -315,21 +342,9 @@ var john = {
   family: ["Jane", "Mark", "Bob", "Emily"],
   isMarried: false,
   23: "It is a number",
+  calcAge: function (birthYear) {
+    return 2021 - birthYear;
+  },
 };
 
-console.log(john.family);
-console.log(john[23]);
-
-john.birthYear = 1993;
-john["isMarried"] = true;
-john.sibling = "Natalie";
-
-console.log(john);
-
-var jane = new Object();
-
-jane.firstName = "Jane";
-jane.lastName = "Foster";
-jane.birthYear = 1994;
-
-console.log(jane);
+console.log(john.calcAge(1993));
