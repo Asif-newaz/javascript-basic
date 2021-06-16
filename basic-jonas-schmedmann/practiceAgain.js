@@ -338,13 +338,15 @@
 var john = {
   firstName: "John",
   lastName: "Smith",
-  birthYear: 1990,
+  birthYear: 1992,
   family: ["Jane", "Mark", "Bob", "Emily"],
   isMarried: false,
   23: "It is a number",
-  calcAge: function (birthYear) {
-    return 2021 - birthYear;
+  calcAge: function () {
+    this.age = 2021 - this.birthYear;
   },
 };
 
-console.log(john.calcAge(1993));
+john.calcAge();
+
+console.log(john);
