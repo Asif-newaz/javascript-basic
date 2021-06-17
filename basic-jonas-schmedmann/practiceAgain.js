@@ -335,18 +335,32 @@
 // console.log(jane);
 
 // Object and method
-var john = {
-  firstName: "John",
-  lastName: "Smith",
-  birthYear: 1992,
-  family: ["Jane", "Mark", "Bob", "Emily"],
-  isMarried: false,
-  23: "It is a number",
-  calcAge: function () {
-    this.age = 2021 - this.birthYear;
-  },
+// var john = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   birthYear: 1992,
+//   family: ["Jane", "Mark", "Bob", "Emily"],
+//   isMarried: false,
+//   23: "It is a number",
+//   calcAge: function () {
+//     this.age = 2021 - this.birthYear;
+//   },
+// };
+
+// john.calcAge();
+
+// console.log(john);
+
+// Challenge 4
+
+var mark = {
+  fullName: "Mark",
+  mass: 84,
+  height: 1.68,
 };
 
-john.calcAge();
-
-console.log(john);
+var john = {
+  fullName: "John",
+  mass: 74,
+  height: 1.75,
+};
