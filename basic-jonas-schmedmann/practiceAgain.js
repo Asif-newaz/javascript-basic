@@ -353,36 +353,40 @@
 
 // Challenge 4
 
-var mark = {
-  fullName: "Mark Miller",
-  mass: 84,
-  height: 1.68,
-  calculateBmi: function () {
-    return (this.bmi = this.mass / (this.height * this.height));
-  },
-};
+// var mark = {
+//   fullName: "Mark Miller",
+//   mass: 84,
+//   height: 1.68,
+//   calculateBmi: function () {
+//     return (this.bmi = this.mass / (this.height * this.height));
+//   },
+// };
 
 // console.log(mark.calculateBmi());
-var markBmi = mark.calculateBmi();
-console.log(mark);
+// var markBmi = mark.calculateBmi();
+// console.log(mark);
 
-var john = {
-  fullName: "John Smith",
-  mass: 74,
-  height: 1.75,
-  calculateBmi: function () {
-    return (this.bmi = this.mass / (this.height * this.height));
-  },
-};
+// var john = {
+//   fullName: "John Smith",
+//   mass: 74,
+//   height: 1.75,
+//   calculateBmi: function () {
+//     return (this.bmi = this.mass / (this.height * this.height));
+//   },
+// };
 
 // console.log(mark.calculateBmi());
-var johnBmi = john.calculateBmi();
-console.log(john);
+// var johnBmi = john.calculateBmi();
+// console.log(john);
 
-if (markBmi > johnBmi) {
-  console.log(mark.fullName + " BMI is higher than " + john.fullName);
-} else if (johnBmi > markBmi) {
-  console.log(john.fullName + " BMI is higher than " + mark.fullName);
-} else {
-  console.log("Both are same BMI");
+// if (markBmi > johnBmi) {
+//   console.log(mark.fullName + " BMI is higher than " + john.fullName);
+// } else if (johnBmi > markBmi) {
+//   console.log(john.fullName + " BMI is higher than " + mark.fullName);
+// } else {
+//   console.log("Both are same BMI");
+// }
+
+for (var i = 0; i < 10; i++) {
+  console.log(i);
 }
