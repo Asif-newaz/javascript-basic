@@ -387,8 +387,34 @@
 //   console.log("Both are same BMI");
 // }
 
-var john = ["John", "Smith", 1990, "Teacher", false];
+// var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
 
-for (var i = 0; i < john.length; i++) {
+// for (var i = 0; i < john.length; i++) {
+//   console.log(john[i]);
+// }
+
+// var i = 0;
+
+// while (i < john.length) {
+//   console.log(john[i]);
+//   i++;
+// }
+
+var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
+
+// for (var i = 0; i < 10; i++) {
+//   if (typeof john[i] !== "string") continue;
+
+//   console.log(john[i]);
+// }
+
+// for (var i = 0; i < 10; i++) {
+//   if (typeof john[i] === "string") break;
+
+//   console.log(john[i]);
+// }
+
+for (var i = john.length - 1; i <= john.length; i--) {
+  if (i === -1) break;
   console.log(john[i]);
 }
