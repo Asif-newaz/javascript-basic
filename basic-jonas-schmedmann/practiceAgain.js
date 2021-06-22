@@ -400,7 +400,7 @@
 //   i++;
 // }
 
-var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
+// var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
 
 // for (var i = 0; i < 10; i++) {
 //   if (typeof john[i] !== "string") continue;
@@ -414,7 +414,15 @@ var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
 //   console.log(john[i]);
 // }
 
-for (var i = john.length - 1; i <= john.length; i--) {
-  if (i === -1) break;
-  console.log(john[i]);
-}
+// for (var i = john.length - 1; i <= john.length; i--) {
+//   if (i === -1) break;
+//   console.log(john[i]);
+// }
+
+// Challenge 5
+var john = {
+  bills: [124, 48, 268, 180, 42],
+  tipCalculator: function() {
+    
+  }
+};
