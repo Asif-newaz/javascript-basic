@@ -423,14 +423,16 @@
 var john = {
   bills: [124, 48, 268, 180, 42],
   tipCalculator: function (bills) {
-    if (bills < 50) {
-      return (20 / 100) * bills;
-    } else if (bills >= 50 && bills < 200) {
-      return (15 / 100) * bills;
-    } else {
-      return (10 / 100) * bills;
+    for (var i = 0; i <= this.bills.length; i++) {
+      if (bills < 50) {
+        return (20 / 100) * bills;
+      } else if (bills >= 50 && bills < 200) {
+        return (15 / 100) * bills;
+      } else {
+        return (10 / 100) * bills;
+      }
     }
   },
 };
 
-console.log(john.tipCalculator(john.bills[0]));
+console.log(john.tipCalculator(john.bills[1]));
