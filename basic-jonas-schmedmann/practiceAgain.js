@@ -433,6 +433,8 @@ var john = {
       }
     }
   },
+  tips: [],
+  billAndTips: []
 };
 
 console.log(john.tipCalculator(john.bills[1]));
