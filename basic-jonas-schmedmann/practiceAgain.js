@@ -400,7 +400,7 @@
 //   i++;
 // }
 
-// var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
+var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
 
 // for (var i = 0; i < 10; i++) {
 //   if (typeof john[i] !== "string") continue;
@@ -414,6 +414,9 @@
 //   console.log(john[i]);
 // }
 
+// for (var i = 0; i < john.length; i++) {
+//   console.log(john[i]);
+// }
 // for (var i = john.length - 1; i <= john.length; i--) {
 //   if (i === -1) break;
 //   console.log(john[i]);
