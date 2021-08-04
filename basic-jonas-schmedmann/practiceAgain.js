@@ -424,6 +424,7 @@ var john = ["John", "Smith", 1990, "Teacher", false, "Crimson"];
 
 // Challenge 5
 var john = {
+  fullName: 'John Smith',
   bills: [124, 48, 268, 180, 42],
   tipCalculator: function (bills) {
     for (var i = 0; i <= this.bills.length; i++) {
