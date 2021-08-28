@@ -1,4 +1,5 @@
 // ES6 practice
+
 // const now = 2037;
 // const ageDavid = now - 1994;
 // const ageSarah = now - 2018;
@@ -29,16 +30,24 @@
 // console.log(fullAddress.credentials?.district);
 // console.log(fullAddress.occupation);
 
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// Coding challenge 1
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const bmiMark = massMark / heightMark ** 2;
-const bmiJohn = massJohn / heightJohn ** 2;
+// const bmiMark = massMark / heightMark ** 2;
+// const bmiJohn = massJohn / heightJohn ** 2;
 
-console.log(bmiMark);
-console.log(bmiJohn);
+// console.log(bmiMark);
+// console.log(bmiJohn);
 
-const markHigherBmi = bmiMark > bmiJohn;
-console.log("Mark has a higher BMI than John" + " " + markHigherBmi);
+// const markHigherBmi = bmiMark > bmiJohn;
+// console.log("Mark has a higher BMI than John" + " " + markHigherBmi);
+
+const firstName = "David";
+const job = "Programer";
+const age = 2037 - 1991;
+
+console.log("I'm" + " " + firstName + ", a " + age + " years old " + job);
+console.log(`I'm ${firstName}, a ${age} years old ${job}`);
