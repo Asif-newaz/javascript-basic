@@ -53,18 +53,34 @@
 // console.log(`I'm ${firstName}, a ${age} years old ${job}`);
 
 // Coding challenge 2
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const bmiMark = massMark / heightMark ** 2;
-const bmiJohn = massJohn / heightJohn ** 2;
+// const bmiMark = massMark / heightMark ** 2;
+// const bmiJohn = massJohn / heightJohn ** 2;
 
-const markHigherBmi = bmiMark > bmiJohn;
+// const markHigherBmi = bmiMark > bmiJohn;
 
-if (bmiMark > bmiJohn) {
-  console.log(`Mark's BMI ${bmiMark} is higher than John's BMI ${bmiJohn}`);
-} else {
-  console.log(`John's BMI ${bmiJohn} is higher than Mark's BMI ${bmiMark}`);
-}
+// if (bmiMark > bmiJohn) {
+//   console.log(`Mark's BMI ${bmiMark} is higher than John's BMI ${bmiJohn}`);
+// } else {
+//   console.log(`John's BMI ${bmiJohn} is higher than Mark's BMI ${bmiMark}`);
+// }
+
+// Javascript type conversion
+const inputYear = "1994";
+console.log(Number(inputYear) + 30);
+
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+
+// Javascript type coercion
+console.log("I am " + 23 + " years old.");
+console.log("I am " - 23 - " years old.");
+
+let n = '1' + 1;
+n = n - 1;
+
+console.log(n);
