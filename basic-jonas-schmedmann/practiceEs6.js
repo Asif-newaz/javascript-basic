@@ -70,17 +70,44 @@
 // }
 
 // Javascript type conversion
-const inputYear = "1994";
-console.log(Number(inputYear) + 30);
+// const inputYear = "1994";
+// console.log(Number(inputYear) + 30);
 
-console.log(Number("Jonas"));
-console.log(typeof NaN);
+// console.log(Number("Jonas"));
+// console.log(typeof NaN);
 
 // Javascript type coercion
-console.log("I am " + 23 + " years old.");
-console.log("I am " - 23 - " years old.");
+// console.log("I am " + 23 + " years old.");
+// console.log("I am " - 23 - " years old.");
 
-let n = '1' + 1;
-n = n - 1;
+// let n = '1' + 1;
+// n = n - 1;
 
-console.log(n);
+// console.log(n);
+
+// Truthy and Falsy values
+// Falsy values in javascript: 0, '', undefined, null, NaN
+// All other values are Truthy except Falsy values
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(false));
+
+console.log(Boolean("Newaz"));
+
+const money = 100;
+if (money) {
+  console.log("Don't spend it all;");
+} else {
+  console.log("You should get a job!");
+}
+
+let height = 0;
+if (height) {
+  console.log("YaY! Height is defined");
+} else {
+  console.log("Height is not defined");
+}
