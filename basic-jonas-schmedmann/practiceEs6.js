@@ -120,9 +120,11 @@ console.log(hasDriversLicense && hasGoodVision);
 console.log(hasDriversLicense || hasGoodVision);
 console.log(!hasDriversLicense);
 
-const shouldDrive = hasDriversLicense && hasGoodVision; 
+// const shouldDrive = hasDriversLicense && hasGoodVision;
 
-if (shouldDrive) {
+const isTired = false;
+
+if (hasDriversLicense && hasGoodVision && isTired) {
   console.log("Sarah is able to drive!");
 } else {
   console.log("Someone else should drive...");
