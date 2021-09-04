@@ -89,25 +89,41 @@
 // Falsy values in javascript: 0, '', undefined, null, NaN
 // All other values are Truthy except Falsy values
 
-console.log(Boolean(0));
-console.log(Boolean(""));
-console.log(Boolean(undefined));
-console.log(Boolean(null));
-console.log(Boolean(NaN));
-console.log(Boolean(false));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// console.log(Boolean(false));
 
-console.log(Boolean("Newaz"));
+// console.log(Boolean("Newaz"));
 
-const money = 100;
-if (money) {
-  console.log("Don't spend it all;");
+// const money = 100;
+// if (money) {
+//   console.log("Don't spend it all;");
+// } else {
+//   console.log("You should get a job!");
+// }
+
+// let height = 0;
+// if (height) {
+//   console.log("YaY! Height is defined");
+// } else {
+//   console.log("Height is not defined");
+// }
+
+// Logical operator
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision; 
+
+if (shouldDrive) {
+  console.log("Sarah is able to drive!");
 } else {
-  console.log("You should get a job!");
-}
-
-let height = 0;
-if (height) {
-  console.log("YaY! Height is defined");
-} else {
-  console.log("Height is not defined");
+  console.log("Someone else should drive...");
 }
