@@ -113,19 +113,45 @@
 // }
 
 // Logical operator
-const hasDriversLicense = true;
-const hasGoodVision = false;
+// const hasDriversLicense = true;
+// const hasGoodVision = false;
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
 
 // const shouldDrive = hasDriversLicense && hasGoodVision;
 
-const isTired = false;
+// const isTired = false;
 
-if (hasDriversLicense && hasGoodVision && isTired) {
-  console.log("Sarah is able to drive!");
+// if (hasDriversLicense && hasGoodVision && isTired) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+// Challenge 3
+const averageDolphinsScores = (96 + 108 + 89) / 3;
+const averageKoalasScores = (88 + 91 + 110) / 3;
+
+if (
+  averageDolphinsScores > averageKoalasScores &&
+  averageDolphinsScores >= 100
+) {
+  console.log(`Dolphins wins with ${averageDolphinsScores} score!`);
+} else if (
+  averageDolphinsScores < averageKoalasScores &&
+  averageKoalasScores >= 100
+) {
+  console.log(`Koalas wins with ${averageDolphinsScores} score!`);
+} else if (
+  averageDolphinsScores === averageKoalasScores &&
+  averageKoalasScores >= 100 &&
+  averageDolphinsScores >= 100
+) {
+  console.log("The game is drawn!");
 } else {
-  console.log("Someone else should drive...");
+  console.log("No team wins the trophy");
 }
+
+// console.log(averageDolphinsScores, averageKoalasScores);
