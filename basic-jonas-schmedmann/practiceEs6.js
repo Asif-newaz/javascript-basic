@@ -131,27 +131,50 @@
 // }
 
 // Challenge 3
-const averageDolphinsScores = (96 + 108 + 89) / 3;
-const averageKoalasScores = (88 + 91 + 110) / 3;
+// const averageDolphinsScores = (96 + 108 + 89) / 3;
+// const averageKoalasScores = (88 + 91 + 110) / 3;
 
-if (
-  averageDolphinsScores > averageKoalasScores &&
-  averageDolphinsScores >= 100
-) {
-  console.log(`Dolphins wins with ${averageDolphinsScores} score!`);
-} else if (
-  averageDolphinsScores < averageKoalasScores &&
-  averageKoalasScores >= 100
-) {
-  console.log(`Koalas wins with ${averageDolphinsScores} score!`);
-} else if (
-  averageDolphinsScores === averageKoalasScores &&
-  averageKoalasScores >= 100 &&
-  averageDolphinsScores >= 100
-) {
-  console.log("The game is drawn!");
-} else {
-  console.log("No team wins the trophy");
-}
+// if (
+//   averageDolphinsScores > averageKoalasScores &&
+//   averageDolphinsScores >= 100
+// ) {
+//   console.log(`Dolphins wins with ${averageDolphinsScores} score!`);
+// } else if (
+//   averageDolphinsScores < averageKoalasScores &&
+//   averageKoalasScores >= 100
+// ) {
+//   console.log(`Koalas wins with ${averageDolphinsScores} score!`);
+// } else if (
+//   averageDolphinsScores === averageKoalasScores &&
+//   averageKoalasScores >= 100 &&
+//   averageDolphinsScores >= 100
+// ) {
+//   console.log("The game is drawn!");
+// } else {
+//   console.log("No team wins the trophy");
+// }
 
 // console.log(averageDolphinsScores, averageKoalasScores);
+
+const day = "Sunday";
+
+switch (day) {
+  case "Saturday":
+    console.log("Plans weekly tasks");
+    break;
+  case "Sunday":
+  case "Monday":
+    console.log("Try to finish all of the major tasks");
+    break;
+  case "Tuesday":
+    console.log("Make sure to complete most of the tasks");
+    break;
+  case "Wednesday":
+    console.log("Finish all of the small and major tasks");
+    break;
+  case "Thursday":
+    console.log("Prepare for sprint meeting!");
+    break;
+  default:
+    console.log("Not a working day");
+}
