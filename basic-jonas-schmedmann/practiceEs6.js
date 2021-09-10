@@ -156,25 +156,40 @@
 
 // console.log(averageDolphinsScores, averageKoalasScores);
 
-const day = "Sunday";
+// const day = "Sunday";
 
-switch (day) {
-  case "Saturday":
-    console.log("Plans weekly tasks");
-    break;
-  case "Sunday":
-  case "Monday":
-    console.log("Try to finish all of the major tasks");
-    break;
-  case "Tuesday":
-    console.log("Make sure to complete most of the tasks");
-    break;
-  case "Wednesday":
-    console.log("Finish all of the small and major tasks");
-    break;
-  case "Thursday":
-    console.log("Prepare for sprint meeting!");
-    break;
-  default:
-    console.log("Not a working day");
-}
+// switch (day) {
+//   case "Saturday":
+//     console.log("Plans weekly tasks");
+//     break;
+//   case "Sunday":
+//   case "Monday":
+//     console.log("Try to finish all of the major tasks");
+//     break;
+//   case "Tuesday":
+//     console.log("Make sure to complete most of the tasks");
+//     break;
+//   case "Wednesday":
+//     console.log("Finish all of the small and major tasks");
+//     break;
+//   case "Thursday":
+//     console.log("Prepare for sprint meeting!");
+//     break;
+//   default:
+//     console.log("Not a working day");
+// }
+
+// Coding challenge
+
+const billValue = 275;
+
+const tip =
+  billValue >= 50 && billValue <= 300
+    ? (15 / 100) * billValue
+    : (20 / 100) * billValue;
+
+console.log(
+  `The bill was ${billValue}, the tip was ${tip}, and the total value ${
+    billValue + tip
+  }`
+);
