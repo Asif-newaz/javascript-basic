@@ -181,15 +181,15 @@
 
 // Coding challenge
 
-const billValue = 275;
+// const billValue = 275;
 
-const tip =
-  billValue >= 50 && billValue <= 300
-    ? (15 / 100) * billValue
-    : (20 / 100) * billValue;
+// const tip =
+//   billValue >= 50 && billValue <= 300
+//     ? (15 / 100) * billValue
+//     : (20 / 100) * billValue;
 
-console.log(
-  `The bill was ${billValue}, the tip was ${tip}, and the total value ${
-    billValue + tip
-  }`
-);
+// console.log(
+//   `The bill was ${billValue}, the tip was ${tip}, and the total value ${
+//     billValue + tip
+//   }`
+// );
