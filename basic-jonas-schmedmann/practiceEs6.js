@@ -193,3 +193,18 @@
 //     billValue + tip
 //   }`
 // );
+
+const cutPieces = function (fruit) {
+  return fruit * 4;
+};
+
+const fruitProcessor = function (apple, orange) {
+  const applePieces = cutPieces(apple);
+  const orangePieces = cutPieces(orange);
+
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+
+  return juice;
+};
+
+console.log(fruitProcessor(5, 3));
