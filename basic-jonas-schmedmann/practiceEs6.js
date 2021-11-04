@@ -194,17 +194,35 @@
 //   }`
 // );
 
-const cutPieces = function (fruit) {
-  return fruit * 4;
+// const cutPieces = function (fruit) {
+//   return fruit * 4;
+// };
+
+// const fruitProcessor = function (apple, orange) {
+//   const applePieces = cutPieces(apple);
+//   const orangePieces = cutPieces(orange);
+
+//   const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+
+//   return juice;
+// };
+
+// console.log(fruitProcessor(5, 3));
+
+const calcAge = function (birthYear) {
+  return 2021 - birthYear;
 };
 
-const fruitProcessor = function (apple, orange) {
-  const applePieces = cutPieces(apple);
-  const orangePieces = cutPieces(orange);
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 60 - age;
 
-  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
-
-  return juice;
+  if (retirement > 0) {
+    return `${firstName} retires in ${retirement} years.`;
+  } else {
+    return `${firstName} has already retired.`;
+  }
 };
 
-console.log(fruitProcessor(5, 3));
+console.log(yearsUntilRetirement(1994, "Sara"));
+console.log(yearsUntilRetirement(1952, "Rita"));
