@@ -226,3 +226,9 @@
 
 // console.log(yearsUntilRetirement(1994, "Sara"));
 // console.log(yearsUntilRetirement(1952, "Rita"));
+
+const calcAverage = (score1, score2, score3) => {
+  return (score1 + score2 + score3) / 3;
+};
+
+console.log(calcAverage(44, 23, 71));
