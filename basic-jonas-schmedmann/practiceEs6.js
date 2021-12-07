@@ -232,3 +232,4 @@ const calcAverage = (score1, score2, score3) => {
 };
 
 console.log(calcAverage(44, 23, 71));
+
