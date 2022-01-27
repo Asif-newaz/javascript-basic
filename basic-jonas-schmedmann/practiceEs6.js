@@ -227,16 +227,27 @@
 // console.log(yearsUntilRetirement(1994, "Sara"));
 // console.log(yearsUntilRetirement(1952, "Rita"));
 
-const calcAverage = (score1, score2, score3) => {
-  return (score1 + score2 + score3) / 3;
-};
+// const calcAverage = (score1, score2, score3) => {
+//   return (score1 + score2 + score3) / 3;
+// };
 
 // console.log(calcAverage(44, 23, 71));
 
-const checkWinner = (avgDolphins, avgKoalas) => {
-  return console.log(calcAverage(avgDolphins));
+// const checkWinner = (avgDolphins, avgKoalas) => {
+//   return console.log(calcAverage(avgDolphins));
 
-  // calcAverage(avgKoalas)
+//   calcAverage(avgKoalas)
+// };
+
+// console.log(checkWinner(44, 23, 71));
+
+// Object
+const david = {
+  age: 28,
+  zodiacSign: "Libra",
+  profession: "Software engineer",
+  address: "Nevada",
+  friends: ["Asif", "Sunny leone", "Tom hanks", "Julia", "Russell crowe"],
 };
 
-console.log(checkWinner(44, 23, 71));
+console.log(david.friends[1]);
