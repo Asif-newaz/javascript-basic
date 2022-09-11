@@ -1,4 +1,5 @@
 // ES6 practice
+"use strict";
 
 // const now = 2037;
 // const ageDavid = now - 1994;
@@ -242,12 +243,21 @@
 // console.log(checkWinner(44, 23, 71));
 
 // Object
-const david = {
-  age: 28,
-  zodiacSign: "Libra",
-  profession: "Software engineer",
-  address: "Nevada",
-  friends: ["Asif", "Sunny leone", "Tom hanks", "Julia", "Russell crowe"],
-};
+// const david = {
+//   age: 28,
+//   zodiacSign: "Libra",
+//   profession: "Software engineer",
+//   address: "Nevada",
+//   friends: ["Asif", "Morgan freeman", "Tom hanks", "Julia", "Russell crowe"],
+// };
 
-console.log(david.friends[1]);
+// console.log(david.friends[1]);
+
+let hasDriversLicense = false;
+const passTest = true;
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log("I can drive 😂");
+
+const interface = "Jhakanaka Dh";
+console.log(interface);
