@@ -1,5 +1,5 @@
 // ES6 practice
-"use strict";
+// "use strict";
 
 // const now = 2037;
 // const ageDavid = now - 1994;
@@ -253,11 +253,23 @@
 
 // console.log(david.friends[1]);
 
-let hasDriversLicense = false;
-const passTest = true;
+// Strict mode in javascript
+// let hasDriversLicense = false;
+// const passTest = true;
 
-if (passTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log("I can drive 😂");
+// if (passTest) hasDriversLicense = true;
+// if (hasDriversLicense) console.log("I can drive 😂");
 
-const interface = "Jhakanaka Dh";
-console.log(interface);
+// const interface = "Jhakanaka Dh";
+// console.log(interface);
+
+function foodProcessor(oranges, apples) {
+  console.log(
+    `There are ${oranges} oranges and ${apples} apples in the basket.`
+  );
+  document.querySelector(
+    ".heading-practice"
+  ).innerHTML = `There are ${oranges} oranges and ${apples} apples in the basket.`;
+}
+
+foodProcessor(2, 4);
