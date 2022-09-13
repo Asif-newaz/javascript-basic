@@ -263,13 +263,28 @@
 // const interface = "Jhakanaka Dh";
 // console.log(interface);
 
-function foodProcessor(oranges, apples) {
-  console.log(
-    `There are ${oranges} oranges and ${apples} apples in the basket.`
-  );
-  document.querySelector(
+// function foodProcessor(oranges, apples) {
+//   console.log(
+//     `There are ${oranges} oranges and ${apples} apples in the basket.`
+//   );
+//   document.querySelector(
+//     ".heading-practice"
+//   ).innerHTML = `There are ${oranges} oranges and ${apples} apples in the basket.`;
+// }
+
+// foodProcessor(2, 4);
+
+const cutFruitPieces = function (fruit) {
+  return fruit * 4;
+};
+
+const foodProcessor = (apples, oranges) => {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  return (document.querySelector(
     ".heading-practice"
-  ).innerHTML = `There are ${oranges} oranges and ${apples} apples in the basket.`;
-}
+  ).innerHTML = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`);
+};
 
 foodProcessor(2, 4);
