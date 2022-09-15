@@ -288,3 +288,24 @@ const foodProcessor = (apples, oranges) => {
 };
 
 foodProcessor(2, 4);
+
+const arr1 = ["test", "actual", 1];
+
+// console.log(arr1[0]);
+// console.log(arr1[arr1.length - 1]);
+// console.log(arr1.length);
+// console.log(newLength);
+
+const smartphone = ["Apple", "Google", "OnePlus", "Samsung", 26, arr1];
+
+console.log(smartphone.indexOf("Google"));
+const newLength = smartphone.push("Nokia");
+console.log(newLength);
+console.log(smartphone.includes("Huawei"));
+console.log(smartphone.includes("26"));
+
+if (smartphone.includes("Siemens")) {
+  console.log("Can you manage onePlus 9rt for me with reasonable price?");
+} else {
+  console.log("What brand of phones are available to you?");
+}
