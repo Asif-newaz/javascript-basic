@@ -274,38 +274,62 @@
 
 // foodProcessor(2, 4);
 
-const cutFruitPieces = function (fruit) {
-  return fruit * 4;
-};
+// const cutFruitPieces = function (fruit) {
+//   return fruit * 4;
+// };
 
-const foodProcessor = (apples, oranges) => {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
+// const foodProcessor = (apples, oranges) => {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
 
-  return (document.querySelector(
-    ".heading-practice"
-  ).innerHTML = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`);
-};
+//   return (document.querySelector(
+//     ".heading-practice"
+//   ).innerHTML = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`);
+// };
 
-foodProcessor(2, 4);
+// foodProcessor(2, 4);
 
-const arr1 = ["test", "actual", 1];
+// const arr1 = ["test", "actual", 1];
 
 // console.log(arr1[0]);
 // console.log(arr1[arr1.length - 1]);
 // console.log(arr1.length);
 // console.log(newLength);
 
-const smartphone = ["Apple", "Google", "OnePlus", "Samsung", 26, arr1];
+// const smartphone = ["Apple", "Google", "OnePlus", "Samsung", 26, arr1];
 
-console.log(smartphone.indexOf("Google"));
-const newLength = smartphone.push("Nokia");
-console.log(newLength);
-console.log(smartphone.includes("Huawei"));
-console.log(smartphone.includes("26"));
+// console.log(smartphone.indexOf("Google"));
+// const newLength = smartphone.push("Nokia");
+// console.log(newLength);
+// console.log(smartphone.includes("Huawei"));
+// console.log(smartphone.includes("26"));
 
-if (smartphone.includes("Siemens")) {
-  console.log("Can you manage onePlus 9rt for me with reasonable price?");
-} else {
-  console.log("What brand of phones are available to you?");
-}
+// if (smartphone.includes("Siemens")) {
+//   console.log("Can you manage onePlus 9rt for me with reasonable price?");
+// } else {
+//   console.log("What brand of phones are available to you?");
+// }
+
+const car = {
+  brandName: "Audi",
+  origin: "Germany",
+  model: "Q8",
+  launchDate: "2020 - 2022",
+  type: "Auto",
+  keyPeople: [
+    "Dr. Manfred Döss",
+    "Peter Mosch",
+    "Rainer Schirmer",
+    "Irene Schulz",
+  ],
+};
+
+document.querySelector(".heading-practice").innerHTML = car.model;
+
+console.log(car.model);
+
+const nameKey = "Name";
+console.log(car["brand" + nameKey]);
+console.log(
+  `${car.brandName} is one of the best car brand in ${car.origin} and ${car.keyPeople[0]} is the man who did this.`
+);
