@@ -310,26 +310,46 @@
 //   console.log("What brand of phones are available to you?");
 // }
 
-const car = {
-  brandName: "Audi",
-  origin: "Germany",
-  model: "Q8",
-  launchDate: "2020 - 2022",
-  type: "Auto",
-  keyPeople: [
-    "Dr. Manfred Döss",
-    "Peter Mosch",
-    "Rainer Schirmer",
-    "Irene Schulz",
-  ],
+// const car = {
+//   brandName: "Audi",
+//   origin: "Germany",
+//   model: "Q8",
+//   launchDate: "2020 - 2022",
+//   availableReleased: 2023,
+//   type: "Auto",
+//   keyPeople: [
+//     "Dr. Manfred Döss",
+//     "Peter Mosch",
+//     "Rainer Schirmer",
+//     "Irene Schulz",
+//   ],
+// };
+
+// document.querySelector(".heading-practice").innerHTML = car.model;
+
+// console.log(car.model);
+
+// const nameKey = "Name";
+// console.log(car["brand" + nameKey]);
+// console.log(
+//   `${car.brandName} is one of the best car brand in ${car.origin} and ${car.keyPeople[0]} is the man who did this.`
+// );
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "Teacher",
+  friends: ["Micheal", "Peter", "Steven"],
+  hasDriverLicense: true,
+
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
 };
 
-document.querySelector(".heading-practice").innerHTML = car.model;
+console.log(jonas.calcAge());
+console.log(this);
 
-console.log(car.model);
-
-const nameKey = "Name";
-console.log(car["brand" + nameKey]);
-console.log(
-  `${car.brandName} is one of the best car brand in ${car.origin} and ${car.keyPeople[0]} is the man who did this.`
-);
+// jonas === this
