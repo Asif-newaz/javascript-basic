@@ -335,34 +335,35 @@
 //   `${car.brandName} is one of the best car brand in ${car.origin} and ${car.keyPeople[0]} is the man who did this.`
 // );
 
-const jonas = {
-  firstName: "Jonas",
-  lastName: "Schmedtmann",
-  birthYear: 1991,
-  job: "Teacher",
-  friends: ["Micheal", "Peter", "Steven"],
-  hasDriverLicense: true,
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   birthYear: 1991,
+//   job: "Teacher",
+//   friends: ["Micheal", "Peter", "Steven"],
+//   hasDriverLicense: true,
 
-  // calcAge: function () {
-  //   console.log(this);
-  //   return 2037 - this.birthYear;
-  // },
+// calcAge: function () {
+//   console.log(this);
+//   return 2037 - this.birthYear;
+// },
 
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
 
-  jonasSummary: function () {
-    const licenseCheck = this.hasDriverLicense ? "a" : "no";
-    return `${this.firstName} is a ${this.calcAge()}-year old ${
-      this.job
-    }, and he has ${licenseCheck} driver's license.`;
-  },
-};
+//   jonasSummary: function () {
+//     const licenseCheck = this.hasDriverLicense ? "a" : "no";
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${
+//       this.job
+//     }, and he has ${licenseCheck} driver's license.`;
+//   },
+// };
 
-console.log(jonas.calcAge());
-console.log(jonas.age);
-console.log(jonas.age);
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+// console.log(jonas.age);
 
-console.log(jonas.jonasSummary());
+// console.log(jonas.jonasSummary());
+
