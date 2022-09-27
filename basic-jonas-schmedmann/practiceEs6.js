@@ -343,13 +343,26 @@ const jonas = {
   friends: ["Micheal", "Peter", "Steven"],
   hasDriverLicense: true,
 
+  // calcAge: function () {
+  //   console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
   calcAge: function () {
-    console.log(this);
-    return 2037 - this.birthYear;
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  jonasSummary: function () {
+    const licenseCheck = this.hasDriverLicense ? "a" : "no";
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      this.job
+    }, and he has ${licenseCheck} driver's license.`;
   },
 };
 
 console.log(jonas.calcAge());
-console.log(this);
+console.log(jonas.age);
+console.log(jonas.age);
 
-// jonas === this
+console.log(jonas.jonasSummary());
