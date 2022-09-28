@@ -367,3 +367,67 @@
 
 // console.log(jonas.jonasSummary());
 
+// Loop practice
+
+// console.log("Lifting weights repetition 1");
+// console.log("Lifting weights repetition 2");
+// console.log("Lifting weights repetition 3");
+// console.log("Lifting weights repetition 4");
+// console.log("Lifting weights repetition 5");
+
+// for (let rep = 1; rep <= 5; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+const david = [
+  "David",
+  28,
+  "Libra",
+  38,
+  "Software engineer",
+  "Nevada",
+  ["Asif", "Morgan freeman", "Tom hanks", "Julia", "Russell crowe"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < david.length; i++) {
+  //Reading from david array
+  console.log(david[i], typeof david[i]);
+
+  //Filling types array
+  types[i] = david[i];
+}
+
+console.log(types);
+
+const years = [1991, 1994, 2007, 1959, 1912];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  function ageCalc() {
+    return 2037 - years[i];
+  }
+
+  //   ages[i] = ageCalc();
+  ages.push(ageCalc());
+}
+
+console.log(ages);
+
+//continue and break
+console.log(`--ONLY STRING--`);
+
+for (let i = 0; i < david.length; i++) {
+  if (typeof david[i] !== "string") continue;
+
+  console.log(david[i], typeof david[i]);
+}
+
+console.log(`--BREAK WITH NUMBER--`);
+for (let i = 0; i < david.length; i++) {
+  if (typeof david[i] === "number") break;
+
+  console.log(david[i], typeof david[i]);
+}
