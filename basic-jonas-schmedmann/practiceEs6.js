@@ -379,58 +379,58 @@
 //   console.log(`Lifting weights repetition ${rep}`);
 // }
 
-const david = [
-  "David",
-  28,
-  "Libra",
-  38,
-  "Software engineer",
-  "Nevada",
-  ["Asif", "Morgan freeman", "Tom hanks", "Julia", "Russell crowe"],
-  true,
-];
+// const david = [
+//   "David",
+//   28,
+//   "Libra",
+//   38,
+//   "Software engineer",
+//   "Nevada",
+//   ["Asif", "Morgan freeman", "Tom hanks", "Julia", "Russell crowe"],
+//   true,
+// ];
 
-const types = [];
+// const types = [];
 
-for (let i = 0; i < david.length; i++) {
+// for (let i = 0; i < david.length; i++) {
   //Reading from david array
-  console.log(david[i], typeof david[i]);
+  // console.log(david[i], typeof david[i]);
 
   //Filling types array
-  types[i] = david[i];
-}
+//   types[i] = david[i];
+// }
 
-console.log(types);
+// console.log(types);
 
-const years = [1991, 1994, 2007, 1959, 1912];
-const ages = [];
+// const years = [1991, 1994, 2007, 1959, 1912];
+// const ages = [];
 
-for (let i = 0; i < years.length; i++) {
-  function ageCalc() {
-    return 2037 - years[i];
-  }
+// for (let i = 0; i < years.length; i++) {
+//   function ageCalc() {
+//     return 2037 - years[i];
+//   }
 
-  //   ages[i] = ageCalc();
-  ages.push(ageCalc());
-}
+//   //   ages[i] = ageCalc();
+//   ages.push(ageCalc());
+// }
 
-console.log(ages);
+// console.log(ages);
 
 //continue and break
-console.log(`--ONLY STRING--`);
+// console.log(`--ONLY STRING--`);
 
-for (let i = 0; i < david.length; i++) {
-  if (typeof david[i] !== "string") continue;
+// for (let i = 0; i < david.length; i++) {
+//   if (typeof david[i] !== "string") continue;
 
-  console.log(david[i], typeof david[i]);
-}
+//   console.log(david[i], typeof david[i]);
+// }
 
-console.log(`--BREAK WITH NUMBER--`);
-for (let i = 0; i < david.length; i++) {
-  if (typeof david[i] === "number") break;
+// console.log(`--BREAK WITH NUMBER--`);
+// for (let i = 0; i < david.length; i++) {
+//   if (typeof david[i] === "number") break;
 
-  console.log(david[i], typeof david[i]);
-}
+//   console.log(david[i], typeof david[i]);
+// }
 
 const jonas = [
   "Jonas",
@@ -442,8 +442,8 @@ const jonas = [
   true,
 ];
 
-console.log(jonas);
+// console.log(jonas);
 
-for (let i = jonas.length; i < 0; i--) {
+for (let i = jonas.length - 1; i >= 0; i--) {
   console.log(jonas[i]);
 }
