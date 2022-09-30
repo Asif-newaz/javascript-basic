@@ -431,3 +431,19 @@ for (let i = 0; i < david.length; i++) {
 
   console.log(david[i], typeof david[i]);
 }
+
+const jonas = [
+  "Jonas",
+  "schmedtmann",
+  31,
+  "Software engineer",
+  "Nevada",
+  ["Asif", "Morgan freeman", "Tom hanks", "Julia", "Russell crowe"],
+  true,
+];
+
+console.log(jonas);
+
+for (let i = jonas.length; i < 0; i--) {
+  console.log(jonas[i]);
+}
