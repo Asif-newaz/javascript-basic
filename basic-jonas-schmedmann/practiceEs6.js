@@ -393,10 +393,10 @@
 // const types = [];
 
 // for (let i = 0; i < david.length; i++) {
-  //Reading from david array
-  // console.log(david[i], typeof david[i]);
+//Reading from david array
+// console.log(david[i], typeof david[i]);
 
-  //Filling types array
+//Filling types array
 //   types[i] = david[i];
 // }
 
@@ -446,4 +446,23 @@ const jonas = [
 
 for (let i = jonas.length - 1; i >= 0; i--) {
   console.log(jonas[i]);
+}
+
+//While loop
+let i = 0;
+
+while (i <= 3) {
+  console.log(`${i} while loop running on...`);
+  i++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You ruled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+
+  if (dice === 6) {
+    console.log("Loop is about to end...");
+  }
 }
