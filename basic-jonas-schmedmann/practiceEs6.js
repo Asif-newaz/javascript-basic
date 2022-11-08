@@ -466,3 +466,19 @@
 //     console.log("Loop is about to end...");
 //   }
 // }
+
+function calcAge(birthYear) {
+  const age = 2037 - birthYear;
+
+  function printAge() {
+    const output = `Your name is ${firstName}. And you are ${age} years old, born in ${birthYear}.`;
+    console.log(output);
+  }
+  printAge();
+
+  return age;
+}
+
+const firstName = "David";
+calcAge(1994);
+// document.querySelector(".heading-practice").textContent = calcAge(1994);
