@@ -432,37 +432,37 @@
 //   console.log(david[i], typeof david[i]);
 // }
 
-const jonas = [
-  "Jonas",
-  "schmedtmann",
-  31,
-  "Software engineer",
-  "Nevada",
-  ["Asif", "Morgan freeman", "Tom hanks", "Julia", "Russell crowe"],
-  true,
-];
+// const jonas = [
+//   "Jonas",
+//   "schmedtmann",
+//   31,
+//   "Software engineer",
+//   "Nevada",
+//   ["Asif", "Morgan freeman", "Tom hanks", "Julia", "Russell crowe"],
+//   true,
+// ];
 
 // console.log(jonas);
 
-for (let i = jonas.length - 1; i >= 0; i--) {
-  console.log(jonas[i]);
-}
+// for (let i = jonas.length; i >= 0; i--) {
+//   console.log(jonas[i]);
+// }
 
 //While loop
-let i = 0;
+// let i = 0;
 
-while (i <= 3) {
-  console.log(`${i} while loop running on...`);
-  i++;
-}
+// while (i <= 3) {
+//   console.log(`${i} while loop running on...`);
+//   i++;
+// }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-while (dice !== 6) {
-  console.log(`You ruled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+//   console.log(`You ruled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
 
-  if (dice === 6) {
-    console.log("Loop is about to end...");
-  }
-}
+//   if (dice === 6) {
+//     console.log("Loop is about to end...");
+//   }
+// }
