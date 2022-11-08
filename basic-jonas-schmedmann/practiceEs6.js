@@ -477,9 +477,14 @@ function calcAge(birthYear) {
   printAge();
 
   if (birthYear >= 1981 && birthYear <= 1996) {
+    var millennial = true;
+    let generationZ = false;
     const str = `Oh, you're a Millennial, ${firstName}`;
     console.log(str);
   }
+
+  console.log(millennial);
+  // console.log(generationZ);
 
   return age;
 }
