@@ -467,35 +467,58 @@
 //   }
 // }
 
-function calcAge(birthYear) {
-  const age = 2037 - birthYear;
+// function calcAge(birthYear) {
+//   const age = 2037 - birthYear;
 
-  function printAge() {
-    let output = `Your name is ${firstName}. And you are ${age} years old, born in ${birthYear}.`;
-    console.log(output);
-  }
-  printAge();
+//   function printAge() {
+//     let output = `Your name is ${firstName}. And you are ${age} years old, born in ${birthYear}.`;
+//     console.log(output);
+//   }
+//   printAge();
 
-  if (birthYear >= 1981 && birthYear <= 1996) {
-    var millennial = true;
-    let generationZ = false;
-    const str = `Oh, you're a Millennial, ${firstName}`;
-    console.log(str);
+//   if (birthYear >= 1981 && birthYear <= 1996) {
+//     var millennial = true;
+//     let generationZ = false;
+//     const str = `Oh, you're a Millennial, ${firstName} ${lastName}`;
+//     var lastName = "Beckham";
+//     console.log(str);
 
-    function add(a, b) {
-      return a + b;
-    }
+//     function add(a, b) {
+//       return a + b;
+//     }
 
-    output = "NEW OUTPUT";
-  }
+// output = "NEW OUTPUT";
+// }
 
-  console.log(millennial);
-  // console.log(generationZ);
-  // console.log(add(2, 3));
+// console.log(millennial);
+// console.log(generationZ);
+// console.log(add(2, 3));
 
-  return age;
-}
+//   return age;
+// }
 
-const firstName = "David";
-calcAge(1994);
+// const firstName = "David";
+// calcAge(1994);
 // document.querySelector(".heading-practice").textContent = calcAge(1994);
+
+// console.log(me);
+// console.log(job);
+// console.log(year);
+
+// var me = "Asif";
+// let job = "Coder";
+// const year = "1994";
+
+// console.log(addDecl(2, 5));
+// console.log(addExpr(2, 5));
+// console.log(addArrow(2, 5));
+
+// function addDecl(a, b) {
+//   return a + b;
+// }
+
+// const addExpr = function (a, b) {
+//   return a + b;
+// };
+
+// const addArrow = (a, b) => a + b;
