@@ -1,5 +1,5 @@
 // ES6 practice
-// "use strict";
+"use strict";
 
 // const now = 2037;
 // const ageDavid = now - 1994;
@@ -471,7 +471,7 @@ function calcAge(birthYear) {
   const age = 2037 - birthYear;
 
   function printAge() {
-    const output = `Your name is ${firstName}. And you are ${age} years old, born in ${birthYear}.`;
+    let output = `Your name is ${firstName}. And you are ${age} years old, born in ${birthYear}.`;
     console.log(output);
   }
   printAge();
@@ -481,10 +481,17 @@ function calcAge(birthYear) {
     let generationZ = false;
     const str = `Oh, you're a Millennial, ${firstName}`;
     console.log(str);
+
+    function add(a, b) {
+      return a + b;
+    }
+
+    output = "NEW OUTPUT";
   }
 
   console.log(millennial);
   // console.log(generationZ);
+  // console.log(add(2, 3));
 
   return age;
 }
