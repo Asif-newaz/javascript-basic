@@ -534,3 +534,22 @@ function calcAge(birthYear) {
 }
 
 calcAge(2022);
+
+// Method borrowing
+const asif = {
+  year: 1994,
+  calcAge: function (year) {
+    console.log(2022 - this.year);
+    // console.log(this);
+  },
+};
+
+asif.calcAge();
+
+const mathild = {
+  year: 1997,
+};
+
+mathild.calcAge = asif.calcAge;
+
+mathild.calcAge();
