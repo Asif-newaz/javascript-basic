@@ -522,3 +522,15 @@
 // };
 
 // const addArrow = (a, b) => a + b;
+
+const a = this;
+
+// console.log(a);
+
+function calcAge(birthYear) {
+  const age = birthYear - 1994;
+  //   console.log(age);
+  //   console.log(this);
+}
+
+calcAge(2022);
